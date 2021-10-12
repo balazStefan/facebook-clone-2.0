@@ -20,6 +20,7 @@ main {
 
 .left {
   display: block;
+
   img {
     display: block;
     width: 320px;
@@ -195,4 +196,27 @@ ul:first-child {
 strong {
   color: black;
   text-decoration: 1px solid gray;
+}
+
+/*Media querry*/
+@media screen and (min-width: 900px) {
+  main {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+  .left {
+    align-content: flex-start;
+  }
+  .right {
+    align-items: center;
+    margin-top: 85px;
+  }
+  footer {
+    margin-left: 225px;
+    margin-right: 225px;
+  }
+}
+.realfooter {
+  margin-left: 250px;
 }
